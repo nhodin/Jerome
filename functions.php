@@ -74,6 +74,14 @@ add_action( 'wp_head', 'frank_add_ie_js_fixes' );
 add_action( 'after_setup_theme', 'frank_register_menu' );
 add_action( 'after_switch_theme', 'frank_set_missing_widget_options' );
 
+add_action( 'after_setup_theme', 'theme_slug_setup' );
+
+function theme_slug_setup() {
+
+	add_theme_support( 'title-tag' );
+
+}
+
 add_editor_style();
 
 $custom_header_support = array(
