@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Frank
+ * @package Jerome
  */
 ?>
 <!DOCTYPE html>
