@@ -21,7 +21,7 @@ Like Frank, Jerome is focused on using HTML5 and CSS3, and is not terribly conce
 
 ###Jerome is mobile
 
-Jerome uses part of [Foundation](http://foundation.zurb.com/) to provide a responsive layout all devices. 
+Jerome uses part of [Foundation](http://foundation.zurb.com/) to provide a responsive layout for all devices. 
 
 ###Jerome is open source
 
