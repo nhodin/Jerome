@@ -44,8 +44,7 @@
 		<p id="comments" class="no_comments">Comments are closed.</p>
 	<?php elseif (comments_open()) : ?>
 		<p id="comments" class="no_comments">
-			<?php /* _e( 'Be the first to leave a comment. Don&rsquo;t be shy.', 'frank_theme' );*/ ?>
-			<?php _e( 'Be the first to leave a comment. We all have something to share!', 'frank_theme' ); ?>
+			<?php _e( 'Be the first to leave a comment. Don&rsquo;t be shy.', 'frank_theme' ); ?>
 		</p>
 <?php endif; ?>
 
