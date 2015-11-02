@@ -15,8 +15,6 @@
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-	<?php wp_title() ?>
-
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -31,6 +29,27 @@
 		<hgroup id="site-title-description">
 			<h1 id="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+
+			<?php if ( frank_tweet_post_attribution() ): ?>
+			<a href="https://twitter.com/<?php echo frank_tweet_post_attribution(); ?>" title="Suivez-moi sur Twitter">
+				<div class="logo-twitter-small">
+					<div class="body"></div>
+					<div class="body-none"></div>
+					<div class="beak-bottom"></div>
+					<div class="beak-bottom-none"></div>
+					<div class="wing-bottom"></div>
+					<div class="wing-bottom-none"></div>
+					<div class="wing-middle"></div>
+					<div class="wing-middle-none"></div>
+					<div class="wing-top"></div>
+					<div class="wing-top-none"></div>
+					<div class="beak-top"></div>
+					<div class="beak-top-none"></div>
+					<div class="head"></div>
+				</div>
+			</a>
+			<?php endif; ?>
+
 		</hgroup>
 
 		<?php
