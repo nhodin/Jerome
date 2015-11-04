@@ -1159,7 +1159,8 @@ p:last-child {
 /*Blockquote*/
 blockquote {
   color: #3d302f;
-  margin: 30px 0 30px 40px;
+  margin: 30px 0 30px 0;
+  text-align: center;
 }
 blockquote p {
   font-size: inherit;
@@ -1209,7 +1210,21 @@ pre, code {
 
 pre {
   /*Merge with Blockquote?*/
-  margin: 30px 0 30px 40px;
+  margin: 30px 0;
+  background: #f3f3f7;
+  border: 1px solid #dedee3;
+  padding: 8px;
+  font-size: 11px;
+  line-height: 1.3em;
+  overflow: auto;
+}
+
+code {
+  background: #f3f3f7;
+  border: 1px solid #dedee3;
+  padding: 4px 8px;
+  font-size: 11px;
+  line-height: 1.3em;
 }
 
 /*MOBILE*/
