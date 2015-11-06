@@ -15,7 +15,7 @@ global $frank_section_caption;
 	<?php endif; ?>
 	<div class='contents nine columns post-group-content'>
 		<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-			<?php get_template_part( 'partials/posts/post' ); ?>
+			<?php get_template_part( 'partials/posts/excerpt' ); ?>
 		<?php endwhile; ?>
 	</div>
 	<?php get_template_part( 'partials/sidebars/sidebar', 'index' ); ?>

@@ -448,4 +448,10 @@ function frank_add_ie_js_fixes() {
 
 	echo '<!--[if lt IE 7]><script src="',  get_stylesheet_directory_uri(), '/javascripts/ie7.js"></script><![endif]-->';
 }
+
+function custom_excerpt($text)
+{
+	return $text;
+}
+add_filter('the_excerpt', 'custom_excerpt');
 ?>
